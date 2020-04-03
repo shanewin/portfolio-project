@@ -65,7 +65,7 @@
 
 <main role="main">
 <div class="container">
-<h1 class="text-center pt-3">Winter Consulting's Blog</h1>
+<h1 class="text-center pt-3">Services</h1>
 <br />
 <br />
 <h2>Latest Posts</h2>
@@ -73,9 +73,9 @@
 
 {% for blog in blogs.all %}
 <a href="{% url 'detail' blog.id %}"><h3>{{ blog.title }}</h3></a>
-{{ blog.pub_date_pretty }}
+<!-- {{ blog.pub_date_pretty }} -->
 <br />
-<img class="img-fluid" src="{{ blog.image.url }}"height=200 width=200 />
+<div align="center"><img class="img-fluid" src="{{ blog.image.url }}"height=200 width=200 /></div>
 <br />
 <p>{{ blog.summary }}</p>
 {% endfor %}
