@@ -66,22 +66,20 @@
 
 <main role="main">
 
-  <section class="jumbotron text-center">
+<section class="jumbotron text-center">
     <div class="container">
       <h1>EdTech Sales Rep Consulting</h1>
       <p class="lead text-muted">Do you need help selling your EdTech product or service? EdTech Sales Rep Consulting is a full-service sales consulting firm specializing in growth strategy development, sales and marketing executive search and team building, and the execution of business development plans.</p>
       <p>
         <a href="#" class="btn btn-primary my-2">Email Us for a Free Consultation</a>
       </p>
-      <img src="{% static 'apple.png' %}" />
+ <img src="{% static 'apple.png' %}" />
     </div>
   </section>
 
-  <div class="album py-5 bg-light">
+  <!-- <div class="album py-5 bg-light"> -->
     <div class="container">
-
       <div class="row">
-
         {% for job in jobs.all %}
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
@@ -94,11 +92,33 @@
         {% endfor %}
       </div>
           </div>
+
+          <div class="container">
+                  <!-- Example row of columns -->
+                  <div class="row">
+                    <div class="col-md-4">
+
+                      <p>Partner with EdTech Sales Rep Consulting for all your recruiting, interviewing, and hiring needs. By learning more about your EdTech offering, we'll build a sales talent strategy aimed at identifying, recruiting, and keeping top performers</p>
+                      <p><a class="btn btn-secondary" href="#" role="button">Read More &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4">
+
+                      <p>With a true working knowledge of the EdTech landsacpe, EdTech Sales Rep Consutling will help your company develop a sales plan that greatly improves your prospects for record-breaking sales performance.</p>
+                      <p><a class="btn btn-secondary" href="#" role="button">Read More &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4">
+
+                      <p>EdTech Sales Rep Consulting is your in-house sales manager, trainer, and coach. We will implement processes to drive sales numbers higher and ensure that sales objectives are met with a hands-on apporach.</p>
+                      <p><a class="btn btn-secondary" href="#" role="button">Read More &raquo;</a></p>
+                    </div>
+                  </div>
+
+<br />
+
         <div ALIGN="center">
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScQ-Emv7Uq3aPdCxEM0uRNWtOil1ruzKf527MW_UxMUAneS6w/viewform?embedded=true" width="640" height="1097" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">Loading…</iframe>
 </div>
-  </div>
-
+</div>
 </main>
 
 <footer class="text-muted">
