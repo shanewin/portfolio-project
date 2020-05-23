@@ -54,10 +54,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#">Services</a>
+            <a class="nav-item nav-link active" href="{% url 'allblogs' %}">Services</a>
+            <a class="nav-item nav-link" href="https://medium.com/@edtechsalesrep" target="_blank">Medium</a>
             <a class="nav-item nav-link" href="#">Podcast</a>
-            <a class="nav-item nav-link active" href="{% url 'allblogs' %}">Blog</a>
-            <a class="nav-item nav-link" href="{% static 'Shane_Winter_Resume_2019_2.pdf' %}">Resume</a>
+            <a class="nav-item nav-link" href="#">About</a>
           </div>
         </div>
       </nav>
@@ -68,17 +68,51 @@
 <h1 class="text-center pt-3">Services</h1>
 <br />
 <br />
-<h2>Latest Posts</h2>
-<hr />
+<!--- <h2>Latest Posts</h2>
+<hr /> -->
 
-{% for blog in blogs.all %}
-<a href="{% url 'detail' blog.id %}"><h3>{{ blog.title }}</h3></a>
-<!-- {{ blog.pub_date_pretty }} -->
+<h3 class="text-center pt-3">Market Research & Business Strategy</h3>
+<div style="text-align:center;"><img class="img-fluid" src="{% static 'plan.png' %}" height=200 width=200 /></div>
+<p>How can your EdTech offering compete in increasingly diverse and rapidly growing industry?</p>
+<p>Right now, your EdTech solution has a competitive advantage over all the similar offerings in the market. Most likely, you already know this. But, getting the school administrators to realize why your solutions is the best option is not as easy as it may seem.</p>
+<p>Only someone with EdTech sales experience that knows the marketplace intimately - and knows how to position products and services in front of administrators and teachers to generate the most interest -&nbsp; will be able to do so.</p>
+<p>At EdTech Sales Rep Consulting, we'll be able to analize your product and understand the unique story behind it that will be the catalyst for sales growth and large-scale adoption. In addition, we will know how your products&nbsp; stacks up again competing products and solutions. We'll be able to pinpoint the perfect strategy. We'll figure out what the competing companies are doing, how you can gain an advantage by reaching out to under-appreciated marketis in the education space that do not garner as much attention bu
 <br />
-<div align="center"><img class="img-fluid" src="{{ blog.image.url }}"height=200 width=200 /></div>
+<br />
+
+<h3 class="text-center pt-3">Executive Search & Recruiting</h3>
+<div style="text-align:center;"><img class="img-fluid" src="{% static 'hiring_2.png' %}" height=200 width=200 /></div>
+<p>Success EdTech sales executive have to have the tenacity of a New York City real estate broker, along with the compassion of a social worker. The same high performing EdTech salespeople need to be tech savvy, organized, and feel the missionary zeal to provide super customer service whenever their schools need help. How do are you supposed to find a sales superstar with all these qualities - let alone many similar candidates to fulfill all of your sales responsibilities year-in and year-out? Partner with EdTech Sales Rep Consulting for all your recruiting, interviewing, and hiring needs.</p>
+<p>EdTech Sales Rep Consulting will:</p>
+<ul>
+<li>Employ a thorough approach designed towards identifying the ideal candidate for your role and your company</li>
+<li>Evaluation of your organization's current sales procedures to determine what types of new hires could propel your company to future</li>
+<li>Craft job descriptions that will attract attention from the highest caliber candidates on over-saturated job boards</li>
+<li>Screen prospects with targeted questions to identify strengths and weaknesses specific to the EdTech field based on our in depth market knowledge</li>
+<li>Define and work within time frame and budget for hiring</li>
+</ul>
+<p>With extensive knowledge of the industry, the EdTech Sales Rep Consulting recruitment model takes an intensive approach to finding the best fit for your company.</p>
+<br />
+<br />
+<h3 class="text-center pt-3">Execute & Improve</h3>
+<div style="text-align:center;"><img class="img-fluid" src="{% static 'plan.png' %}" height=200 width=200 /></div>
+<p>How can your EdTech offering compete in increasingly diverse and rapidly growing industry?</p>
+<p>Right now, your EdTech solution has a competitive advantage over all the similar offerings in the market. Most likely, you already know this. But, getting the school administrators to realize why your solutions is the best option is not as easy as it may seem.</p>
+<p>Only someone with EdTech sales experience that knows the marketplace intimately - and knows how to position products and services in front of administrators and teachers to generate the most interest -&nbsp; will be able to do so.</p>
+<p>At EdTech Sales Rep Consulting, we'll be able to analize your product and understand the unique story behind it that will be the catalyst for sales growth and large-scale adoption. In addition, we will know how your products&nbsp; stacks up again competing products and solutions. We'll be able to pinpoint the perfect strategy. We'll figure out what the competing companies are doing, how you can gain an advantage by reaching out to under-appreciated marketis in the education space that do not garner as much attention bu
+<br />
+<br />
+
+
+<!---{% for blog in blogs.all %}
+<a href="{% url 'detail' blog.id %}"><h3>{{ blog.title }}</h3></a>
+{{ blog.pub_date_pretty }}
+<br />
+<img class="img-fluid" src="{{ blog.image.url }}"height=200 width=200 />
 <br />
 <p>{{ blog.summary }}</p>
-{% endfor %}
+  <p><a class="btn btn-secondary" href="{% url 'detail' blog.id %}" role="button">Read More &raquo;</a></p>
+{% endfor %} -->
 
 
 </div>
@@ -86,7 +120,7 @@
 
 <footer class="text-muted">
   <div class="container text-center">
-    <p> © Winter Consulting {% now "Y" %}</p>
+    <p> © EdTech Sales Rep Consulting {% now "Y" %}</p>
   </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
