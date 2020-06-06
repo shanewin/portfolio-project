@@ -49,7 +49,7 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="{% url 'home' %}">EdTech Sales Consulting</a>
+        <a class="navbar-brand" href="{% url 'home' %}">EdTech Sales Rep Consulting</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -71,7 +71,7 @@
       <h1>EdTech Sales Rep Consulting</h1>
       <p class="lead text-muted">Do you need help selling your EdTech product or service? EdTech Sales Rep Consulting is a full-service sales consulting firm specializing in growth strategy development, sales and marketing executive search and team building, and the execution of business development plans.</p>
       <p>
-        <a href="#" class="btn btn-primary my-2">Email Us for a Free Consultation</a>
+        <a href="#consultation" class="btn btn-primary my-2">Email Us for a Free Consultation</a>
       </p>
  <img src="{% static 'apple.png' %}" />
     </div>
@@ -99,24 +99,59 @@
                     <div class="col-md-4">
 
                       <p>Partner with EdTech Sales Rep Consulting for all your recruiting, interviewing, and hiring needs. By learning more about your EdTech offering, we'll build a sales talent strategy aimed at identifying, recruiting, and keeping top performers</p>
-                      <p><a class="btn btn-secondary" href="#" role="button">Read More &raquo;</a></p>
+                      <p><a class="btn btn-secondary" href="{% url 'allblogs' %}" role="button">Read More &raquo;</a></p>
                     </div>
                     <div class="col-md-4">
 
                       <p>With a true working knowledge of the EdTech landsacpe, EdTech Sales Rep Consutling will help your company develop a sales plan that greatly improves your prospects for record-breaking sales performance.</p>
-                      <p><a class="btn btn-secondary" href="#" role="button">Read More &raquo;</a></p>
+                      <p><a class="btn btn-secondary" href="{% url 'allblogs' %}" role="button">Read More &raquo;</a></p>
                     </div>
                     <div class="col-md-4">
 
                       <p>EdTech Sales Rep Consulting is your in-house sales manager, trainer, and coach. We will implement processes to drive sales numbers higher and ensure that sales objectives are met with a hands-on apporach.</p>
-                      <p><a class="btn btn-secondary" href="#" role="button">Read More &raquo;</a></p>
+                      <p><a class="btn btn-secondary" href="{% url 'allblogs' %}" role="button">Read More &raquo;</a></p>
                     </div>
                   </div>
 
 <br />
 
         <div ALIGN="center">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScQ-Emv7Uq3aPdCxEM0uRNWtOil1ruzKf527MW_UxMUAneS6w/viewform?embedded=true" width="640" height="1097" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">Loading…</iframe>
+<!-- <a id="consultation"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScQ-Emv7Uq3aPdCxEM0uRNWtOil1ruzKf527MW_UxMUAneS6w/viewform?embedded=true" width="640" height="1097" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">Loading…</iframe></a> -->
+<a id="consultation">
+
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+  onload="if(submitted) {window.location='/blog/';}"></iframe>
+<form action="https://docs.google.com/forms/d/e/1FAIpQLScQ-Emv7Uq3aPdCxEM0uRNWtOil1ruzKf527MW_UxMUAneS6w/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+      <label>First Name*</label>
+      <input type="text" placeholder="First Name*" name="entry.672116849" required>
+      <br><br>
+      <label>Last Name*</label>
+      <input type="text" placeholder="Last Name*" name="entry.284957780" required>
+      <br><br>
+      <label>Title*</label>
+      <input type="text" placeholder="Title*" name="entry.732400030" required>
+      <br><br>
+      <label>Company Name*</label>
+      <input type="text" placeholder="Company Name*" name="entry.1166157218" required>
+      <br><br>
+      <label>Email*</label>
+      <input type="email" placeholder="Email*" name="entry.811627178" required>
+      <br><br>
+      <label>Phone*</label>
+      <input type="tel" placeholder="Phone*" name="entry.467692756" required>
+      <br><br>
+      <label>Tell me a little bit about your EdTech company</label>
+      <textarea rows="5" placeholder="Company Description" name="entry.444309058"></textarea>
+      <br><br>
+      <label>Is there anything in particular you would like to discuss?</label>
+      <textarea rows="5" placeholder="Discuss" name="entry.1149359166"></textarea>
+      <br><br>
+      <button type="submit">Send</button>
+</form>
+</a>
+
+
 </div>
 </div>
 </main>
