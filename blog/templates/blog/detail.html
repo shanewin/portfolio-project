@@ -54,10 +54,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#">Services</a>
+            <a class="nav-item nav-link active" href="{% url 'allblogs' %}">Services</a>
+            <a class="nav-item nav-link" href="https://medium.com/@edtechsalesrep" target="_blank">Medium</a>
             <a class="nav-item nav-link" href="#">Podcast</a>
-            <a class="nav-item nav-link active" href="{% url 'allblogs' %}">Blog</a>
-            <a class="nav-item nav-link" href="{% static 'Shane_Winter_Resume_2019_2.pdf' %}">Resume</a>
+            <a class="nav-item nav-link" href="#">About</a>
           </div>
         </div>
       </nav>
@@ -71,14 +71,24 @@
 
 <br />
 <br />
-<p><img class="img-fluid" src="{{ blog.image.url }}" style="float: left;" />{{ blog.body }}</p>
+<p><img class="img-fluid" src="{{ blog.image.url }}" style="float: left;" />{{ blog.body }}
+  With nearly 15 years of experience in educational technology sales and sales management, EdTech Sales Rep Consulting is a multi-service sales consultancy with a focus on fostering real sales representative behavior change and performance improvement in the K-12 and higher education space.
+</p>
+<p>
+EdTech Sales Rep Consulting extends to our clients a deep understanding of what drives K-12 and higher education decision-makers to choose one technology solution over another. With this insight, we can provide our clients with actionable steps to sales process and methodology improvements to ensure profitability in spite of any dynamic internal staffing shits and changing external market forces.
+</P>
+<p>
+  Although our consultancy is buttressed by a high-level framework of sales process creation and enhancement along with executable skills training, EdTech Sales Rep Consulting does not rely solely on nonspecific business direction and instruction to achieve results. EdTech Sales Rep Consulting prides ourselves on being in the field, constantly and continuously engaging with K-12 schools and higher education organizations. We will have detailed support and recommended actions items for companies and sales executives of all levels of experience - ranging from which social media strategies are best suited for engaging with school administrators, to why and how EdTech should adopt and adapt traditional strategic account management techniques into school district and higher ed technology sales.
+
+
+</p>
 
 </div>
 </main>
 
 <footer class="text-muted">
   <div class="container text-center">
-    <p> © Winter Consulting {% now "Y" %}</p>
+    <p> © EdTech Sales Rep Consulting {% now "Y" %}</p>
   </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
