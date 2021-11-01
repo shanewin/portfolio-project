@@ -1,9 +1,0 @@
-<!-- templates/email.html -->
-<h1>Contact Us</h1>
-<form method="post">
-    {% raw %}{% csrf_token %}{% endraw %}
-    {% raw %}{{ form.as_p }}{% endraw %}
-    <div class="form-actions">
-      <button type="submit">Send</button>
-    </div>
-</form>
